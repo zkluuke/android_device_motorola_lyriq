@@ -21,11 +21,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     bootctrl.mt6893
 
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-    bootctrl.mt6893 \
-    libgptutils \
-    libz \
-    libcutils
+RECOVERY_PRODUCT := recovery
+PRODUCT_PACKAGES += \
+    bootctrl.mt6893.recovery \
+    android.hardware.boot@1.0-impl.recovery
 
 PRODUCT_PACKAGES += \
     otapreopt_script \
