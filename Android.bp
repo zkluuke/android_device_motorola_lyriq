@@ -7,3 +7,22 @@
 
 soong_namespace {
 }
+
+cc_library_shared {
+    name: "bootctrl.mt6893",  // Name of the bootctrl HAL
+    srcs: ["bootctrl.cpp"],   // Add your source files here
+    shared_libs: [
+        "libgptutils",
+        "libz",
+        "liblog",               // Or replace with appropriate libraries for recovery
+        "libbase",              // If libcutils is deprecated in your version of Android
+    ],
+    recovery_available: true,  // Make the library available for recovery
+    target: {
+        recovery: {
+            recovery_variant: true,  // Specific to recovery image
+            // Any other recovery-specific settings
+        }
+    },
+    // Other necessary properties for your module
+}
