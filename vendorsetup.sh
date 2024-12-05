@@ -5,6 +5,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-add_lunch_combo omni_lyriq-user
-add_lunch_combo omni_lyriq-userdebug
-add_lunch_combo omni_lyriq-eng
+add_lunch_combo twrp_lyriq-user
+add_lunch_combo twrp_lyriq-userdebug
+add_lunch_combo twrp_lyriq-eng
