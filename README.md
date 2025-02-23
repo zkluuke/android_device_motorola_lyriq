@@ -1,4 +1,4 @@
-# Android device tree for motorola motorola edge 40 (lyriq)
+# Android device tree for edge 40 (lyriq)
 
 ```
 #
